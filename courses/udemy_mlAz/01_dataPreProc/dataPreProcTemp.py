@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import sklearn.preprocessing as sklp
-import sklearn.cross_validation as sklcv
+import sklearn.model_selection as sklcv
 
 # Read in data
 dataset = pd.read_csv("Data.csv")
