@@ -19,7 +19,11 @@ y = dataset.iloc[:,2].values
 regressor = sktree.DecisionTreeRegressor(criterion = 'mse', random_state = 0)
 regressor.fit(X,y)
 
-# Plot results for Support Vector Regression
+# Predicting results for 6.5
+yPred = regressor.predict(6.5)
+print(yPred)
+
+# Plot results for Decision Tree Regression
 gridX = np.arange(min(X), max(X), 0.01)
 gridX = gridX.reshape((len(gridX),1))
 obsSalaries = plt.scatter(X,y, color = 'red')
